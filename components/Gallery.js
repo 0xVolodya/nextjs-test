@@ -52,7 +52,7 @@ export default function Gallery(props) {
 
   const uploadData = async (images) => {
     const copy = Object.assign({}, data)
-    copy.images = images
+    copy.images = data.images.concat(images)
     setData(copy)
 
     await fetch(

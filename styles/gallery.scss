@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  margin: 0;
 }
 
 #__next {
@@ -11,12 +12,14 @@ textarea {
 }
 
 .main-wrapper {
-  padding: 2em;
   display: grid;
+  padding-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .setting {
