@@ -68,8 +68,9 @@ export default function Gallery(props) {
   }
 
   const deleteData = async () => {
-    data.images = []
-    setData(data)
+    const copy = Object.assign({}, data)
+    copy.images = []
+    setData(copy)
     await fetch(
       `/api/images`,
       {
